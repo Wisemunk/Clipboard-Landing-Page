@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    background: url("images/bg-header-desktop.png") no-repeat top;
+    background-size: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#first_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 800px;
+}
+
+#first_part, #third_part, #fourth_part, #fifth_part {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#first_part img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 50px;
+}
+
+#sub_first {
+    margin-top: 100px;
+}
+
+@media (min-width: 1080px) {
+    #first_part,  #third_part {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    #fourth_part, #fifth_part {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 1440px) {
+    #first_part, #third_part {
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 580px) {
+    #second_part {
+        margin-top: 50%;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    #first_part img {
+        margin-top: 200px;
+        margin-bottom: 30px;
+    }
+}
+
+h1, h2 {
+    font-weight: 600;
+    margin-bottom: 0%;
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+.btn .ios {
+    background: hsl(171, 66%, 44%);
+}
+
+.btn .mac {
+    background: hsl(233, 100%, 69%);
+}
+
+.mac, .ios {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: white;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.mac:hover, .ios:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#second_part {
+    display: flex;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+#second_part p {
+    margin-bottom: 10%;
+    width: 70%;
+}
+
+@media (max-width: 1080px) {
+    #second_part {
+        margin-bottom: 100px;
+    }
+    #second_part p {
+        margin-bottom: 0;
+    }
+}
+
+#second_part img {
+    transform: translate(-10%);
+}
+
+#second_part img {
+    height: 50%;
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    #second_part {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #second_part img {
+        transform: translate(0%);
+    }
+
+    #second_part p {
+        width: 100%;
+    }
+}
+
+#third_part p {
+    margin-bottom: 50px;
+}
+
+#third_part img {
+    margin-left: -10%;
+    width: 100%;
+    height: 100%;
+}
+
+#fourth_part {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.sub_fourth {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    line-height: 1.5;
+}
+
+#height_fix {
+    height: 32px;
+}
+
+.sub_fourth em {
+    font-size: 21px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+#logos {
+    gap: 150px;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 1400px) {
+    #logos {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .sub_fourth {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: hsl(201, 11%, 66%, 0.2);
+    height: 200px;
+    margin-top: 100px;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+footer div {
+    display: flex;
+    margin-right: 50px;
+    gap: 15px;
+}
+
+footer div div {
+    display: flex;
+    flex-direction: column;
+}
+
+#links a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+#links a:hover, .fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover  {
+    color: hsl(171, 66%, 44%);
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    color: hsl(210, 10%, 33%);
+}
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        gap: 50px;
+    }
+
+    footer div {
+        margin-right: 0%;
+    }
+
+    footer div div {
+        gap: 10px;
+        width: 80%;
+    }
+}
